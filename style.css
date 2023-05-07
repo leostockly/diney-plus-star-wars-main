@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: black;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.logo {
+  width: 80px;
+  height: 50px;
+}
+
+header {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.5) 100%);
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul a {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 50%;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+main {
+  margin-top: 595px;
+  padding: 0px 40px;
+}
+
+section {
+  margin: 20px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 45px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  
+}
+
+.card {
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 4.58163px 4.58163px rgba(0, 0, 0, 0.5);
+
+}
+
+.card:hover {
+  outline: 4px solid white;
+  display: block;
+  scale: 1.05;
+}
+
+.card img {
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
